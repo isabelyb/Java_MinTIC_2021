@@ -4,9 +4,9 @@
 import java.util.Scanner;
 
 public class App {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception { //Averiguar throws Exception
         Scanner input = new Scanner(System.in);
-        System.out.print("Type an integer number: ");
+        System.out.print("Type an integer number: "); 
         int number = input.nextInt();
         input.close();
 
