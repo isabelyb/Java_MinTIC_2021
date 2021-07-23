@@ -4,6 +4,7 @@ public class Computador{
     public double ano = 2019;
     public double pantalla = 16;
     public double precioBase = 1570500;
+    private double factor = 1;
 
     //Constructores
     public Computador(){
@@ -26,8 +27,9 @@ public class Computador{
 
     //Metodos
     public double calcularPrecio(){
-        double precioFinal = precioBase * double factor;
+        double precioFinal = precioBase * (ano/2021) * ( pantalla/16) * factor;
     return precioFinal;
+    
     }
     
 

@@ -1,7 +1,7 @@
 //Inicio de la solucion
 public class App{
     public static void main(String[] parametrosDeConsola){
-    //Ejemplo de como se evaluaran las soluciones: Solucion prueba 1
+    //Ejemplo de como se evaluaran las soluciones: Solucion prueba 1 
     
     //Inicializacion de la lista de computadores
     Computador[] arregloComputadores = new Computador[5];

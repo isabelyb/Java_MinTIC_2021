@@ -1,6 +1,8 @@
 public class Portatil extends Computador {
     //Atributos
     public boolean tarjetaDeVideo = false;
+    private double factor;
+
 
     //Constructores
     public Portatil(double precioBase, boolean tarjetaDeVideo){
@@ -20,5 +22,19 @@ public class Portatil extends Computador {
         this.tarjetaDeVideo = tarjetaDeVideo;
         this.ano = ano;    
         }
+
+    //Metodos
+    public double calcularPrecio(){
+        double precioFinal = precioBase * factor;
+        if (tarjetaDeVideo == true){
+            factor = 1.2;
+        } else {
+            factor = 1;
+        }
+    return precioFinal;
+    }
+
+
+
         
 }
