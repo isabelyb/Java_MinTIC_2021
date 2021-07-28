@@ -1,9 +1,11 @@
 public class DeMesa extends Computador {
     //atributos
     double ram = 4;
-    private double factor;
-
+    
     //constructores
+    public DeMesa(){
+    }
+
     public DeMesa(double precioBase, double ram){
         this.precioBase = precioBase;
         this.ram = ram;
@@ -24,7 +26,7 @@ public class DeMesa extends Computador {
 
     //Metodos
     public double calcularPrecio(){
-        double precioFinal = precioBase * factor;
+        double factor;
         if (ram < 4){
             factor = 0.9;
         } else if (ram > 12){
@@ -32,6 +34,7 @@ public class DeMesa extends Computador {
         } else {
             factor = 1.1;
         }
+        double precioFinal = precioBase * (ano/2021) * ( pantalla/16) * factor;    
     return precioFinal;
     }
         
